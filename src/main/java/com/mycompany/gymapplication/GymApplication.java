@@ -29,6 +29,7 @@ public class GymApplication extends javax.swing.JFrame {
     } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
       e.printStackTrace();
     }
+   
 }
 }
  

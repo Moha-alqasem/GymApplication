@@ -263,14 +263,22 @@ private String Password;
                           dialog.setVisible(true); // عرض الـ JDialog 
                           GYMJFrame Gym = new GYMJFrame();  
                           Gym.setVisible(true);  
-                        
+                    }
+                         else {
+                   
+                    EnterPasswordCoachForLogin.setText("");
+                     JOptionPane.showMessageDialog(this, "Incorrect password, try again");
+            
                       
-                        
                     } 
                     }
                 
              else {
+                EnterIDCoachForLogin.setText("");
+                EnterPasswordCoachForLogin.setText("");
+                
                 JOptionPane.showMessageDialog(this, "Sorry, there is no personal identifier like this.");
+                
             }
         } catch (IOException e) {
             JOptionPane.showMessageDialog(this, "The file you try to access does not exist!!");

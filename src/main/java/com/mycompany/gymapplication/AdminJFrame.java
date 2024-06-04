@@ -263,9 +263,18 @@ public class AdminJFrame extends GymApplication {
                           Gym.setVisible(true);  
                   
                     }
+               else {
+                   
+                    EnterPasswordAdminForLogin.setText("");
+                     JOptionPane.showMessageDialog(this, "Incorrect password, try again");
+              
+               }
             }
             else {
+                 EnterPasswordAdminForLogin.setText("");
+                  EnterIDAdminForLogin.setText("");
                 JOptionPane.showMessageDialog(this,"Sorry, there is no personal identifier like this.");
+                
             }
         } catch (IOException e) {
               JOptionPane.showMessageDialog(this,"The file you try to access does not exist!! ");

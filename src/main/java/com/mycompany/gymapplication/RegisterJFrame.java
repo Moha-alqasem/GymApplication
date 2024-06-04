@@ -67,8 +67,18 @@ public class RegisterJFrame extends GymApplication {
             JOptionPane.showMessageDialog(this, "Please enter your password.");
             return;
         }
-        
-        
+        if (password.length() != 4) {
+            EnterMemberPasword.setText("");
+            JOptionPane.showMessageDialog(this, "Please enter your password from 4 digits.");
+            
+            return;
+        }
+        if(phoneNumber.length()!=10){
+            
+              JOptionPane.showMessageDialog(this, "Please enter your phone Number from 10 digits.");
+              EnterMemberPhoneNumber.setText("");
+            return;
+        }
         
          
         

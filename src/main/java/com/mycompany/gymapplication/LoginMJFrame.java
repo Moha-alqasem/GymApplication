@@ -292,8 +292,16 @@ private LocalDate subscriptionExpiration;
                   //      printInfo();
                   
                     }
+                else {
+                    
+                    EnterPasswordMemberForLogin.setText("");
+                   
+                      JOptionPane.showMessageDialog(this, "Incorrect password, try again");
+                }
             }
             else {
+                 EnterPasswordMemberForLogin.setText("");
+                  EnterIDMemberForLogin.setText("");
                 JOptionPane.showMessageDialog(this,"Sorry, there is no personal identifier like this.");
             }
         } catch (IOException e) {
