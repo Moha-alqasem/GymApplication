@@ -1,2 +1,2 @@
 # GymApplication
- using java UI with locle file
+ using java UI with local file
